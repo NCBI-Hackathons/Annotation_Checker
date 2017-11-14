@@ -5,5 +5,25 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 ![Annotation_Checker](https://raw.githubusercontent.com/NCBI-Hackathons/Annotation_Checker/master/Images/Annotation_Checker.png?sanitize=true)
 ##
 2017-11-14.
-  -NCBI Genome Workbench (https://www.ncbi.nlm.nih.gov/tools/gbench/) contains useful functionality.  Work to incorporate useful features into downstream analysis.
+-Began to work on user taxon and sequence selection.
+  1. Write a search string using NCBI EUtils to pull a reference sequence. NP_037367 = ribonuclease 3 isoform 1 [Homo sapiens].
+  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=protein&term=NP_037367
+  
+  2. Fetch the sequence fasta file.
+  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=155030234&rettype=fasta&retmode=text
+  
+  3. BLAST the reference fasta against user-selected taxID list. For testing and comparison, a list of 6 vertebrates (plus human reference) with well-validated genomic annotations, were chosen (https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi). Each taxa was BLASTed against the user reference sequence, and the best hit was selected if BLAST result was valid:
+
+taxIDs: 
+9913 - Bos taurus (domesticated cow)
+7955 - Danio (zebrafish)
+9606 - Human
+10090 - Mouse
+4932 - Rat
+8355 - Takifugu (pufferfish)
+4577 - Xenopus
+
+  4. Continue working to automate this script. 
+
+-NCBI Genome Workbench (https://www.ncbi.nlm.nih.gov/tools/gbench/) contains useful functionality.  Work to incorporate useful features into Annotation_Checker User Summary readouts.
 ![Annotation_Checker](https://raw.githubusercontent.com/NCBI-Hackathons/Annotation_Checker/master/Images/Verts_Tree.png?sanitize=true)
