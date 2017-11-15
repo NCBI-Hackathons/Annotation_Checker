@@ -4,7 +4,11 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 ## 
 ![Annotation_Checker](https://raw.githubusercontent.com/NCBI-Hackathons/Annotation_Checker/master/Images/Annotation_Checker.png?sanitize=true)
 ##
-2017-11-14.
+20171115
+
+
+##
+20171114
 -Began to work on user taxon and sequence selection.
   1. Write a search string using NCBI EUtils to pull a reference sequence. NP_037367 = ribonuclease 3 isoform 1 [Homo sapiens].
   https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=protein&term=NP_037367
