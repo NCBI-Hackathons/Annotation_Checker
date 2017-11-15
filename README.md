@@ -5,7 +5,10 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 ![Annotation_Checker](https://raw.githubusercontent.com/NCBI-Hackathons/Annotation_Checker/master/Images/Annotation_Checker.png?sanitize=true)
 ##
 20171115
-
+1. Pull user-specified RefSeq genomes by NCBI Taxonomy Database taxID's (https://www.ncbi.nlm.nih.gov/taxonomy). ie (Danio rerio).
+2. Generate a list of taxID's from a given node (eg. taxID's for all formal species descending from 'Protostomia'.
+3. Best tools available from Python-based ETE-Toolkit (http://etetoolkit.org/) (http://etetoolkit.org/docs/2.3/tutorial/tutorial_ncbitaxonomy.html#getting-descendant-taxa), 
+Jaime Huerta-Cepas, Francois Serra and Peer Bork. ETE 3: Reconstruction, analysis and visualization of phylogenomic data. Mol Biol Evol 2016; doi: 10.1093/molbev/msw046
 
 ##
 20171114
