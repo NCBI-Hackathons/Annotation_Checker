@@ -18,6 +18,8 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 
 Jaime Huerta-Cepas, Francois Serra and Peer Bork. ETE 3: Reconstruction, analysis and visualization of phylogenomic data. Mol Biol Evol 2016; doi: 10.1093/molbev/msw046
 
+4. Install ETE-toolkit.  Windows-based Oracle virtual box or windows python?
+
 ##
 20171114
 -Began to work on user taxon and sequence selection.
