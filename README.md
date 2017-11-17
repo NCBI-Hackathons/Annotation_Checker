@@ -2,6 +2,114 @@
 Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI database-specific readout for identifying divergent taxonomic sequences. The tool will provide a quantitative capability to differentiate genome sequence quality from biologically-based evolutionary divergence.       
 ##
 11-17. Check each taxid for sequence database resources - 0/1? genomic DNA, RNA, protein databases, #accessions. Parse a subset of taxids possessing each resource.
+##
+
+```
+$ esearch -db genome  -query txid10088[Organism:exp] | esummary
+
+$<!DOCTYPE DocumentSummarySet PUBLIC "-//NLM//DTD esummary genome 20140703//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20140703/esummary_genome.dtd">
+
+<DocumentSummarySet status="OK">
+<DbBuild>Build171117-1300.1</DbBuild>
+
+<DocumentSummary><Id>53616</Id>
+        <Organism_Name>Mus pahari</Organism_Name>
+        <Organism_Kingdom>Eukaryota</Organism_Kingdom>
+        <Organism_Group></Organism_Group>
+        <Organism_Subgroup>Mammals</Organism_Subgroup>
+        <Defline></Defline>
+        <ProjectID>0</ProjectID>
+        <Project_Accession></Project_Accession>
+        <Status>Complete</Status>
+        <Number_of_Chromosomes>24</Number_of_Chromosomes>
+        <Number_of_Plasmids>0</Number_of_Plasmids>
+        <Number_of_Organelles>0</Number_of_Organelles>
+        <Assembly_Name>PAHARI_EIJ_v1.1</Assembly_Name>
+        <Assembly_Accession>GCA_900095145.2</Assembly_Accession>
+        <AssemblyID>1086041</AssemblyID>
+        <Create_Date>2017/01/10 00:00</Create_Date>
+        <Options></Options>
+        <Weight>0</Weight>
+        <Chromosome_assemblies>1</Chromosome_assemblies>
+        <Scaffold_assemblies>0</Scaffold_assemblies>
+        <SRA_genomes>0</SRA_genomes>
+        <TaxId>10093</TaxId>
+</DocumentSummary>
+
+<DocumentSummary><Id>34289</Id>
+        <Organism_Name>Mus caroli</Organism_Name>
+        <Organism_Kingdom>Eukaryota</Organism_Kingdom>
+        <Organism_Group></Organism_Group>
+        <Organism_Subgroup>Mammals</Organism_Subgroup>
+        <Defline>Mus caroli RefSeq Genome</Defline>
+        <ProjectID>264557</ProjectID>
+        <Project_Accession>PRJNA264557</Project_Accession>
+        <Status>Complete</Status>
+        <Number_of_Chromosomes>20</Number_of_Chromosomes>
+        <Number_of_Plasmids>0</Number_of_Plasmids>
+        <Number_of_Organelles>1</Number_of_Organelles>
+        <Assembly_Name>CAROLI_EIJ_v1.1</Assembly_Name>
+        <Assembly_Accession>GCA_900094665.2</Assembly_Accession>
+        <AssemblyID>1086031</AssemblyID>
+        <Create_Date>2017/01/10 00:00</Create_Date>
+        <Options></Options>
+        <Weight>0</Weight>
+        <Chromosome_assemblies>1</Chromosome_assemblies>
+        <Scaffold_assemblies>0</Scaffold_assemblies>
+        <SRA_genomes>0</SRA_genomes>
+        <TaxId>10089</TaxId>
+</DocumentSummary>
+
+<DocumentSummary><Id>12818</Id>
+        <Organism_Name>Mus spretus</Organism_Name>
+        <Organism_Kingdom>Eukaryota</Organism_Kingdom>
+        <Organism_Group></Organism_Group>
+        <Organism_Subgroup>Mammals</Organism_Subgroup>
+        <Defline>Mus spretus overview</Defline>
+        <ProjectID>83951</ProjectID>
+        <Project_Accession>PRJNA83951</Project_Accession>
+        <Status>Complete</Status>
+        <Number_of_Chromosomes>20</Number_of_Chromosomes>
+        <Number_of_Plasmids>0</Number_of_Plasmids>
+        <Number_of_Organelles>1</Number_of_Organelles>
+        <Assembly_Name>SPRET_EiJ_v1</Assembly_Name>
+        <Assembly_Accession>GCA_001624865.1</Assembly_Accession>
+        <AssemblyID>731341</AssemblyID>
+        <Create_Date>2016/04/15 00:00</Create_Date>
+        <Options></Options>
+        <Weight>0</Weight>
+        <Chromosome_assemblies>1</Chromosome_assemblies>
+        <Scaffold_assemblies>0</Scaffold_assemblies>
+        <SRA_genomes>0</SRA_genomes>
+        <TaxId>10096</TaxId>
+</DocumentSummary>
+
+<DocumentSummary><Id>52</Id>
+        <Organism_Name>Mus musculus</Organism_Name>
+        <Organism_Kingdom>Eukaryota</Organism_Kingdom>
+        <Organism_Group></Organism_Group>
+        <Organism_Subgroup>Mammals</Organism_Subgroup>
+        <Defline>The laboratory mouse is a major model organism for basic mammalian biology, human disease, and genome evolution, and its genome has been sequenced</Defline>
+        <ProjectID>9559</ProjectID>
+        <Project_Accession>PRJNA9559</Project_Accession>
+        <Status>Complete</Status>
+        <Number_of_Chromosomes>21</Number_of_Chromosomes>
+        <Number_of_Plasmids>0</Number_of_Plasmids>
+        <Number_of_Organelles>1</Number_of_Organelles>
+        <Assembly_Name>GRCm38.p6</Assembly_Name>
+        <Assembly_Accession>GCA_000001635.8</Assembly_Accession>
+        <AssemblyID>1198761</AssemblyID>
+        <Create_Date>2002/05/15 00:00</Create_Date>
+        <Options></Options>
+        <Weight>999</Weight>
+        <Chromosome_assemblies>17</Chromosome_assemblies>
+        <Scaffold_assemblies>5</Scaffold_assemblies>
+        <SRA_genomes>0</SRA_genomes>
+        <TaxId>10090</TaxId>
+</DocumentSummary>
+
+</DocumentSummarySet>
+```
 
 ##
 $ python3.6 Taxpull.py > taxids
