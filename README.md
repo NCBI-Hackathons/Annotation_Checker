@@ -1,6 +1,9 @@
 # Annotation_Checker
 Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI database-specific readout for identifying divergent taxonomic sequences. The tool will provide a quantitative capability to differentiate genome sequence quality from biologically-based evolutionary divergence.       
-#
+##
+11-17. Check each taxid for sequence database resources - 0/1? genomic DNA, RNA, protein databases, #accessions. Parse a subset of taxids possessing each resource.
+
+##
 $ python3.6 Taxpull.py > taxids
 ```    
 ##Taxpull.py
