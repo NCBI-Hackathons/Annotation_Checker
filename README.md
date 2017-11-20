@@ -8,7 +8,8 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 ```
 $ esearch -db genome -query txid10088[Organism:exp] | elink -target assembly | efetch -format uid
 
-##Gives 25 genome assemblies ( = 4x species assembled mouse genomes (Mus musculus (27x), M. pahari(1x), M. caroli(1x), M. spretus(1x)), 
+##Gives 25 genome assemblies ( = 4x species assembled mouse genomes (Mus musculus (27x), M. pahari(1x), M. caroli(1x), M. spretus(1x)),
+##~Choose only 1 M.musculus assembly (Reference sequence).
 
 1198761
 1086041
@@ -53,7 +54,7 @@ $ esearch -db genome -query txid10088[Organism:exp] | efetch -format uid
 ```
 $ esearch -db assembly -query txid10088[Organism:exp] | efetch -format uid
 
-##Gives 40 assemblies ( = 4x species assembled mouse genomes (Mus musculus (27x), M. pahari(1x), M. caroli(1x), M. spretus(1x)), 
+##Gives 40 assemblies
 
 1198761
 1086041
