@@ -7,7 +7,36 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 ##
 
 ```
-$ esearch -db genome -query txid10088[Organism:exp] | elink -target assembly | elink -target nuccore | efetch -format fasta
+$ esearch -db assembly -query txid10088[Organism:exp] | efetch -format uid
+```
+
+##Gives 25 genome assemblies ( = 4x species assembled mouse genomes (Mus musculus (27x), M. pahari(1x), M. caroli(1x), M. spretus(1x)),  
+
+$1198761
+1086041
+1086031
+738491
+738481
+738461
+738451
+731351
+731341
+731331
+731321
+731311
+731301
+731291
+731281
+731271
+731261
+731251
+731241
+663298
+567298
+419498
+280718
+239318
+228898
 ```
 
 20171120 - ToDo
