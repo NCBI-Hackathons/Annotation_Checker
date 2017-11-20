@@ -6,8 +6,11 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 # 'Developer Blog':
 ##
 20171120
+-mkblastdatabase from esearch results <AssemblyID>X<AssemblyID>, BLAST search against 
 
-Alternative Taxonomy DB parsing: https://github.com/NCBI-Hackathons/EDirectCookbook/issues/25
+-Alternatives for NCBI Taxonomy DB parsing: https://github.com/NCBI-Hackathons/EDirectCookbook/issues/25
+
+-VecScreen_plus_taxonomy, https://github.com/aaschaffer/vecscreen_plus_taxonomy
 ##
 20171117
 ```
