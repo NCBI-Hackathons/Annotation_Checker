@@ -8,6 +8,7 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 
 Get the four genome .gz files associated with Genome DB (esearch -db genome -query txid10088[Organism:exp]) from NCBI FTP site.
 
+NCBI EUtils API tutorial: https://www.youtube.com/watch?v=iCFVVexp30o.
 ##
 ```
 $ esearch -db genome -query txid10088[Organism:exp] | elink -target assembly | efetch -format uid
