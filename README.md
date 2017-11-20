@@ -5,6 +5,10 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 # 'Developer Blog':
 
 ##
+
+Get the four genome .gz files associated with Genome DB (esearch -db genome -query txid10088[Organism:exp]) from NCBI FTP site.
+
+##
 ```
 $ esearch -db genome -query txid10088[Organism:exp] | elink -target assembly | efetch -format uid
 
