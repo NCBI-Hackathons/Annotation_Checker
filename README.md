@@ -6,20 +6,9 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 
 ##
 ```
-esearch -db genome -query txid10088[Organism:exp] | efetch -format uid
+$ esearch -db genome -query txid10088[Organism:exp] | elink -target assembly | efetch -format uid
 
-##Gives 4 genome accessions (4x species assembled mouse genomes)
-
-53616
-34289
-12818
-52
-```
-
-```
-$ esearch -db assembly -query txid10088[Organism:exp] | efetch -format uid
-
-##Gives 25 genome assemblies ( = 4x species assembled mouse genomes (Mus musculus (27x), M. pahari(1x), M. caroli(1x), M. spretus(1x)),  
+##Gives 25 genome assemblies ( = 4x species assembled mouse genomes (Mus musculus (27x), M. pahari(1x), M. caroli(1x), M. spretus(1x)), 
 
 1198761
 1086041
@@ -46,6 +35,66 @@ $ esearch -db assembly -query txid10088[Organism:exp] | efetch -format uid
 280718
 239318
 228898
+
+```
+
+
+```
+$ esearch -db genome -query txid10088[Organism:exp] | efetch -format uid
+
+##Gives 4 genome accessions (4x species assembled mouse genomes)
+
+53616
+34289
+12818
+52
+```
+
+```
+$ esearch -db assembly -query txid10088[Organism:exp] | efetch -format uid
+
+##Gives 40 assemblies ( = 4x species assembled mouse genomes (Mus musculus (27x), M. pahari(1x), M. caroli(1x), M. spretus(1x)), 
+
+1198761
+1086041
+1086031
+1034061
+1033621
+763931
+738491
+738481
+738461
+738451
+731351
+731341
+731331
+731321
+731311
+731301
+731291
+731281
+731271
+731261
+731251
+731241
+663298
+567298
+558528
+419498
+418928
+327618
+315421
+280718
+239318
+238988
+228898
+165668
+132211
+5728
+5678
+3188
+3168
+2598
 
 ```
 
