@@ -9,6 +9,11 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 esearch -db genome -query txid10088[Organism:exp] | efetch -format uid
 
 ##Gives 4 genome accessions (4x species assembled mouse genomes)
+
+53616
+34289
+12818
+52
 ```
 
 ```
@@ -16,7 +21,7 @@ $ esearch -db assembly -query txid10088[Organism:exp] | efetch -format uid
 
 ##Gives 25 genome assemblies ( = 4x species assembled mouse genomes (Mus musculus (27x), M. pahari(1x), M. caroli(1x), M. spretus(1x)),  
 
-$1198761
+1198761
 1086041
 1086031
 738491
