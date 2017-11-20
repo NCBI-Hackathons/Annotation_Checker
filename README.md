@@ -1,11 +1,11 @@
 # Annotation_Checker
-Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI database-specific readout for identifying divergent taxonomic sequences. The tool will provide a quantitative capability to differentiate genome sequence quality from biologically-based evolutionary divergence.       
-##
-11-17. Check each taxid for sequence database resources - 0/1? genomic DNA, RNA, protein databases, #accessions. Parse a subset of taxids possessing each resource.
+Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI database-specific readout for identifying divergent taxonomic sequences. The tool will provide a quantitative capability to differentiate genome sequence quality from biologically-based evolutionary divergence.  
+
 ##
 # 'Developer Blog':
+
 ##
-20171120
+20171120 - ToDo
 -mkblastdatabase from esearch results <AssemblyID>X<AssemblyID>, BLAST search against 
 
 -Alternatives for NCBI Taxonomy DB parsing: https://github.com/NCBI-Hackathons/EDirectCookbook/issues/25
@@ -154,7 +154,8 @@ $ [10089, 10091, 10092, 35531, 39442, 46456, 57486, 80274, 116058, 179238, 47781
 Jaime Huerta-Cepas, Francois Serra and Peer Bork. ETE 3: Reconstruction, analysis and visualization of phylogenomic data. Mol Biol Evol 2016; doi: 10.1093/molbev/msw046
 
 4. Install ETE-toolkit.  Windows-based Oracle virtual box or windows python?
-
+##
+11-17. Check each taxid for sequence database resources - 0/1? genomic DNA, RNA, protein databases, #accessions. Parse a subset of taxids possessing each resource.
 ##
 20171114
 -Began to work on user taxon and sequence selection.
