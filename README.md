@@ -3,7 +3,13 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 ##
 11-17. Check each taxid for sequence database resources - 0/1? genomic DNA, RNA, protein databases, #accessions. Parse a subset of taxids possessing each resource.
 ##
+# 'Developer Blog':
+##
+20171120
 
+Alternative Taxonomy DB parsing: https://github.com/NCBI-Hackathons/EDirectCookbook/issues/25
+##
+20171117
 ```
 $ esearch -db genome  -query txid10088[Organism:exp] | esummary
 
