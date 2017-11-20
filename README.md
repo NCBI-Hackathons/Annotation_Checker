@@ -11,6 +11,12 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 -Alternatives for NCBI Taxonomy DB parsing: https://github.com/NCBI-Hackathons/EDirectCookbook/issues/25
 
 -VecScreen_plus_taxonomy, https://github.com/aaschaffer/vecscreen_plus_taxonomy
+
+NCBI Entrez Tools (E-Utils) Manual: https://www.ncbi.nlm.nih.gov/books/NBK25501/pdf/Bookshelf_NBK25501.pdf
+
+BLAST Command Line Applications Manual: https://www.ncbi.nlm.nih.gov/books/NBK279690/pdf/Bookshelf_NBK279690.pdf
+
+
 ##
 20171117
 ```
