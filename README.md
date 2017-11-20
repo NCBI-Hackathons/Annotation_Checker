@@ -5,6 +5,11 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 # 'Developer Blog':
 
 ##
+
+'''
+$ esearch -db genome -query txid10088[Organism:exp] | elink -target assembly | elink -target nuccore | efetch -format fasta
+'''
+
 20171120 - ToDo
 -mkblastdatabase from esearch results <AssemblyID>X<AssemblyID>, BLAST search against Taxa-selected assemblies from NCBI Assembly DB.  Produce readouts of BLAST results.
 
