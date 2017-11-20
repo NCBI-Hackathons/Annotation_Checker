@@ -6,7 +6,7 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 
 ##
 20171120 - ToDo
--mkblastdatabase from esearch results <AssemblyID>X<AssemblyID>, BLAST search against 
+-mkblastdatabase from esearch results <AssemblyID>X<AssemblyID>, BLAST search against Taxa-selected assemblies from NCBI Assembly DB.
 
 -Alternatives for NCBI Taxonomy DB parsing: https://github.com/NCBI-Hackathons/EDirectCookbook/issues/25
 
