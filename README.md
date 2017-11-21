@@ -8,9 +8,26 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 
 20171121
 
+```
+$ esearch -db genome -query 53616[uid] | elink -target assembly | esummary | xtract -pattern DocumentSummary -element FtpPath_RefSeq
+
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/095/145/GCF_900095145.1_PAHARI_EIJ_v1.1
+
+$ wget --timestamping ftp://ftp.ncbi.nih.gov/genomes/all/GCF/900/095/145/GCF_900095145.1_PAHARI_EIJ_v1.1_genomic.gbff.gz
+
+OR
+
+$ wget --timestamping ftp://ftp.ncbi.nih.gov/genomes/all/GCF/900/095/145/GCF_900095145.1_PAHARI_EIJ_v1.1_genomic.gbff.gz
+
+Returns "No such file or directory"??
+
+```
+
 NCBI Genomes Download (FTP) FAQ: https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
 
 EUtils 'stuff': https://dataguide.nlm.nih.gov/eutilities/utilities.html
+
+
 
 ##
 20171120
