@@ -9,13 +9,14 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 20171121
 
 ```
+$ wget `esearch -db genome -query txid10088[Organism:exp] | elink -target assembly | esummary | xtract -pattern DocumentSummary -element FtpPath_RefSeq | awk -F"/" '{print $0"/"$NF"_genomic.fna.gz"}'`
+
+downloads .gz files
+
 $ esearch -db genome -query 53616[uid] | elink -target assembly | esummary | xtract -pattern DocumentSummary -element FtpPath_RefSeq
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/095/145/GCF_900095145.1_PAHARI_EIJ_v1.1
 
-$ wget `esearch -db genome -query 53616[uid] | elink -target assembly | esummary | xtract -pattern DocumentSummary -element FtpPath_RefSeq | awk -F"/" '{print $0"/"$NF"_genomic.fna.gz"}'`
-
-Downloads .gz file
 
 ```
 
