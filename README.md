@@ -15,7 +15,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/095/145/GCF_900095145.1_PAHARI_EI
 
 $ wget `esearch -db genome -query 53616[uid] | elink -target assembly | esummary | xtract -pattern DocumentSummary -element FtpPath_RefSeq | awk -F"/" '{print $0"/"$NF"_genomic.fna.gz"}'`
 
-Returns .gz file
+Downloads .gz file
 
 ```
 
