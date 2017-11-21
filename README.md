@@ -29,6 +29,7 @@ EUtils 'stuff': https://dataguide.nlm.nih.gov/eutilities/utilities.html
 
 NCBI Assembly DB: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4702866/
 
+Assembly DB Basics: https://www.ncbi.nlm.nih.gov/assembly/basics/
 
 
 ##
