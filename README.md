@@ -13,13 +13,9 @@ $ esearch -db genome -query 53616[uid] | elink -target assembly | esummary | xtr
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/095/145/GCF_900095145.1_PAHARI_EIJ_v1.1
 
-$ wget --timestamping ftp://ftp.ncbi.nih.gov/genomes/all/GCF/900/095/145/GCF_900095145.1_PAHARI_EIJ_v1.1_genomic.gbff.gz
+$ wget `esearch -db genome -query 53616[uid] | elink -target assembly | esummary | xtract -pattern DocumentSummary -element FtpPath_RefSeq | awk -F"/" '{print $0"/"$NF"_genomic.fna.gz"}'`
 
-OR
-
-$ wget --timestamping ftp://ftp.ncbi.nih.gov/genomes/all/GCF/900/095/145/GCF_900095145.1_PAHARI_EIJ_v1.1_genomic.gbff.gz
-
-Returns "No such file or directory"??
+Returns .gz file
 
 ```
 
