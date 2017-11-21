@@ -27,6 +27,8 @@ NCBI Genomes Download (FTP) FAQ: https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
 
 EUtils 'stuff': https://dataguide.nlm.nih.gov/eutilities/utilities.html
 
+NCBI Assembly DB: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4702866/
+
 
 
 ##
