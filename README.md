@@ -6,6 +6,11 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 
 ##
 
+20171121
+
+NCBI Genomes Download (FTP) FAQ: https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
+
+##
 Get the four genome .gz files associated with Genome DB (esearch -db genome -query txid10088[Organism:exp]) from NCBI FTP site.
 
 NCBI EUtils API tutorial: https://www.youtube.com/watch?v=iCFVVexp30o.
