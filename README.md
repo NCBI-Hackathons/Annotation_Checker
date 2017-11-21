@@ -11,13 +11,10 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 ```
 $ wget `esearch -db genome -query txid10088[Organism:exp] | elink -target assembly | esummary | xtract -pattern DocumentSummary -element FtpPath_RefSeq | awk -F"/" '{print $0"/"$NF"_genomic.fna.gz"}'`
 
-##downloads .gz files
+##downloads 3 .gz files, one for each refseq species:
 
-ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/635/GCF_000001635.26_GRCm38.p6
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/095/145/GCF_900095145.1_PAHARI_EIJ_v1.1
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/094/665/GCF_900094665.1_CAROLI_EIJ_v1.1
+GCF_000001635.26_GRCm38.p6_genomic.fna.gz       GCF_900095145.1_PAHARI_EIJ_v1.1_genomic.fna.gz
+GCF_900094665.1_CAROLI_EIJ_v1.1_genomic.fna.gz
 
 $ esearch -db genome -query 53616[uid] | elink -target assembly | esummary | xtract -pattern DocumentSummary -element FtpPath_RefSeq
 
