@@ -11,6 +11,8 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 NCBI Genomes Download (FTP) FAQ: https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
 
 ##
+20171120
+
 Get the four genome .gz files associated with Genome DB (esearch -db genome -query txid10088[Organism:exp]) from NCBI FTP site.
 
 NCBI EUtils API tutorial: https://www.youtube.com/watch?v=iCFVVexp30o.
@@ -109,7 +111,8 @@ $ esearch -db assembly -query txid10088[Organism:exp] | efetch -format uid
 
 ```
 
-20171120 - ToDo
+ToDo
+
 -mkblastdatabase from esearch results <AssemblyID>X<AssemblyID>, BLAST search against Taxa-selected assemblies from NCBI Assembly DB.  Produce readouts of BLAST results.
 
 -Alternatives for NCBI Taxonomy DB parsing: https://github.com/NCBI-Hackathons/EDirectCookbook/issues/25
