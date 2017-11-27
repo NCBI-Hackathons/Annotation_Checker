@@ -3,6 +3,13 @@ Annotation_Checker will provide a user-selectable, taxonomically subsetted, NCBI
 
 ##
 # 'Developer Blog':
+##
+
+20171125
+
+```
+$ esearch -db taxonomy -query "txid7215[Organism]" | elink -target assembly | efetch -format docsum | xtract -pattern DocumentSummary -element FtpPath_RefSeq | awk -F"/" '{print $0"/"$NF"_genomic.fna.gz"}'
+```
 
 ##
 
