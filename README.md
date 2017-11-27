@@ -20,6 +20,9 @@ $ esearch -db genome -query 53616[uid] | elink -target assembly | esummary | xtr
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/095/145/GCF_900095145.1_PAHARI_EIJ_v1.1
 
+$ esearch -db genome -query txid40674[Organism:exp] | elink -target assembly | esummary |  xtract -pa  xtract -pattern DocumentSummary -element Organism SpeciesName FtpPath_RefSeq > Mammals
+
+## Returns a list of Mammal species present in the Assembly DB, and ftp paths for Genomic fastas for those species with Genome RefSeq accessions.
 
 ```
 
